@@ -27,6 +27,7 @@ export default function Home() {
     const result = await postLogin(data)
     Router.replace('/users')
   }
+  
   const handleAdminLogin = async () => {
     const data = {
       name: "admin",
@@ -36,7 +37,6 @@ export default function Home() {
     console.log(result)
     Router.replace('/admin')
   }
-
 
   return (
     <>
